@@ -1,0 +1,724 @@
+/* =========================================
+   EASYHOME DEALS - MAIN STYLESHEET
+   ========================================= */
+
+
+/* ---------- Google Font ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+
+/* ---------- Global Styles ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f8f8f6;
+    color: #1d1d1d;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+
+/* ---------- Navigation ---------- */
+
+header {
+    width: 100%;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 24px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: #c56a32;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #c56a32;
+}
+
+.login-btn {
+    border: none;
+    background: #1d1d1d;
+    color: white;
+
+    padding: 11px 22px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #c56a32;
+}
+
+
+/* ---------- Hero Section ---------- */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(20, 20, 20, 0.58),
+            rgba(20, 20, 20, 0.58)
+        ),
+        url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2000&q=85");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content {
+    width: 1200px;
+    max-width: calc(100% - 48px);
+
+    margin: auto;
+}
+
+.small-heading {
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    max-width: 750px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(48px, 6vw, 78px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #f0a36f;
+}
+
+.hero-text {
+    max-width: 550px;
+
+    font-size: 17px;
+
+    color: #eeeeee;
+
+    margin-bottom: 42px;
+}
+
+
+/* ---------- Search Box ---------- */
+
+.search-box {
+    max-width: 1050px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+}
+
+.search-field {
+    flex: 1;
+    height: 68px;
+    padding: 0 15px;
+
+    border-right: 1px solid #eeeeee;
+
+    display: grid;
+    grid-template-rows: 18px 24px;
+    align-content: center;
+}
+
+.search-field label {
+    display: flex;
+    align-items: center;
+
+    height: 18px;
+
+    font-size: 11px;
+    font-weight: 700;
+    color: #888;
+
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    margin: 0;
+}
+.search-field input,
+.search-field select {
+    width: 100%;
+    height: 24px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #222;
+    font-size: 14px;
+
+    padding: 0;
+    margin: 0;
+
+    line-height: 24px;
+}
+.search-field select {
+    appearance: auto;
+    cursor: pointer;
+}
+.search-btn {
+    border: none;
+
+    background: #c56a32;
+
+    color: white;
+
+    padding: 18px 30px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background: #a95325;
+
+    transform: translateY(-1px);
+}
+
+
+/* ---------- General Section ---------- */
+
+.properties,
+.locations {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 100px 24px;
+}
+
+.section-heading {
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+}
+
+.section-label {
+    color: #c56a32;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.section-heading h2,
+.about h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 42px;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+.section-heading > a {
+    color: #c56a32;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+/* ---------- Property Cards ---------- */
+
+.property-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.property-card {
+    background: white;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    border: 1px solid #eeeeee;
+
+    transition: 0.3s;
+}
+
+.property-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.09);
+}
+
+.property-image {
+    height: 230px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #ddd;
+}
+
+
+   .property-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.property-card:hover .property-image img {
+    transform: scale(1.05);
+}
+
+
+.property-badge {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    z-index: 2;
+
+    background: white;
+
+    color: #222;
+
+    padding: 6px 11px;
+
+    border-radius: 6px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+.property-info {
+    padding: 22px;
+}
+
+.property-type {
+    font-size: 11px;
+
+    color: #c56a32;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+    margin-bottom: 7px;
+}
+
+.property-info h3 {
+    font-size: 19px;
+
+    margin-bottom: 7px;
+}
+
+.property-location {
+    font-size: 13px;
+
+    color: #777;
+
+    margin-bottom: 20px;
+}
+
+.property-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.property-bottom strong {
+    font-size: 18px;
+}
+
+.property-bottom strong span {
+    font-size: 12px;
+
+    font-weight: 400;
+
+    color: #888;
+}
+
+.view-btn {
+    border: 1px solid #ddd;
+
+    background: white;
+
+    padding: 8px 15px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.view-btn:hover {
+    background: #1d1d1d;
+
+    color: white;
+
+    border-color: #1d1d1d;
+}
+
+
+/* ---------- Locations ---------- */
+
+.locations {
+    padding-top: 20px;
+}
+
+.location-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.location-card {
+    background: white;
+
+    border: 1px solid #eeeeee;
+
+    padding: 28px 22px;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #c56a32;
+}
+
+.location-card h3 {
+    font-size: 17px;
+
+    margin-bottom: 5px;
+}
+
+.location-card p {
+    color: #888;
+
+    font-size: 12px;
+}
+
+
+/* ---------- About ---------- */
+
+.about {
+    background: #1d1d1d;
+
+    color: white;
+
+    padding: 100px 24px;
+}
+
+.about-content {
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 48px;
+
+    margin-bottom: 25px;
+}
+
+.about p:last-child {
+    color: #bdbdbd;
+
+    font-size: 16px;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    background: #141414;
+
+    color: white;
+
+    padding: 35px 24px;
+}
+
+.footer-content {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.footer-content h2 {
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+.footer-content h2 span {
+    color: #c56a32;
+}
+
+.footer-content p {
+    color: #888;
+
+    font-size: 12px;
+}
+
+
+/* ---------- Responsive Design ---------- */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .search-box {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .search-field {
+        border-right: none;
+
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+
+    .property-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .location-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: 65px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .login-btn {
+        padding: 9px 15px;
+    }
+
+    .hero {
+        min-height: 700px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+
+        letter-spacing: -1px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .properties,
+    .locations {
+        padding: 70px 18px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .property-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about h2 {
+        font-size: 36px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+}
+/* ---------- Search Field Alignment Fix ---------- */
+
+.search-box .search-field {
+    position: relative;
+    height: 68px;
+    padding: 0 15px;
+    display: block;
+}
+
+/* Keep all labels at exactly the same height */
+.search-box .search-field label {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+
+    height: 18px;
+    margin: 0;
+
+    display: block;
+    line-height: 18px;
+}
+
+/* Keep all input/select values at exactly the same height */
+.search-box .search-field input,
+.search-box .search-field select {
+    position: absolute;
+    top: 31px;
+    left: 15px;
+
+    width: calc(100% - 30px);
+    height: 24px;
+
+    margin: 0;
+    padding: 0;
+
+    line-height: 24px;
+}
