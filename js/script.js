@@ -149,4 +149,9 @@ function showNoResultsMessage(count) {
 
     }
 
+
+// Open property details page
+
+function openProperty(propertyId) {
+    window.location.href = "property.html?id=" + propertyId;
 }

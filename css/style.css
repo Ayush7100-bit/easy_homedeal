@@ -722,3 +722,281 @@ footer {
 
     line-height: 24px;
 }
+/* =========================================
+   PROPERTY DETAILS PAGE
+========================================= */
+
+.property-details {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+}
+
+
+/* Property Image */
+
+.property-details-image {
+    width: 100%;
+    height: 550px;
+
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+
+.property-details-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/* Property Information */
+
+.property-details-info {
+    padding: 10px 0;
+}
+
+
+.property-details-info h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 42px;
+    line-height: 1.15;
+
+    margin: 10px 0 15px;
+}
+
+
+.property-details-info .property-location {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+
+
+/* Price */
+
+.property-price {
+    font-size: 32px;
+    font-weight: 700;
+
+    margin-bottom: 30px;
+}
+
+
+.property-price span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+}
+
+
+
+/* Features */
+
+.property-features {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 35px;
+}
+
+
+.property-features div {
+    padding: 18px;
+
+    background: #f7f7f7;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    font-size: 15px;
+}
+
+
+.property-features strong {
+    font-size: 15px;
+}
+
+
+.property-features span {
+    color: #777;
+    font-size: 13px;
+}
+
+
+
+/* Description */
+
+.property-description {
+    margin-bottom: 30px;
+}
+
+
+.property-description h2,
+.property-amenities h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+
+.property-description p {
+    color: #666;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+
+/* Amenities */
+
+.property-amenities {
+    margin-bottom: 30px;
+}
+
+
+.amenities-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+.amenities-list span {
+    background: #f7f7f7;
+
+    padding: 10px 14px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+
+
+/* Action Buttons */
+
+.property-actions {
+    display: flex;
+
+    gap: 12px;
+}
+
+
+.contact-btn,
+.whatsapp-btn {
+    border: none;
+
+    padding: 15px 25px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.contact-btn {
+    background: #c56a32;
+
+    color: white;
+}
+
+
+.whatsapp-btn {
+    background: #222;
+
+    color: white;
+}
+
+
+.contact-btn:hover,
+.whatsapp-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .property-details {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        margin-top: 30px;
+    }
+
+
+    .property-details-image {
+        height: 400px;
+    }
+
+
+    .property-details-info h1 {
+        font-size: 34px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .property-details {
+        padding: 0 20px;
+    }
+
+
+    .property-details-image {
+        height: 300px;
+    }
+
+
+    .property-details-info h1 {
+        font-size: 30px;
+    }
+
+
+    .property-features {
+        grid-template-columns: 1fr;
+    }
+
+
+    .property-actions {
+        flex-direction: column;
+    }
+
+
+    .contact-btn,
+    .whatsapp-btn {
+        width: 100%;
+    }
+
+}
