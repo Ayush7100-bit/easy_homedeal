@@ -1000,3 +1000,146 @@ footer {
     }
 
 }
+/* =========================================
+   ENQUIRY FORM
+========================================= */
+
+.enquiry-section {
+    margin-top: 35px;
+    padding: 30px;
+
+    background: #f7f7f7;
+
+    border-radius: 15px;
+}
+
+
+.enquiry-section h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 26px;
+
+    margin-bottom: 8px;
+}
+
+
+.enquiry-section > p {
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* Form */
+
+#enquiryForm {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.form-group label {
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #333;
+}
+
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    background: white;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #c56a32;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* Submit Button */
+
+.submit-enquiry-btn {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #c56a32;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.submit-enquiry-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Success Message */
+
+.enquiry-success {
+    display: none;
+
+    margin-top: 18px;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    background: #eaf7ee;
+
+    color: #247a3d;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}

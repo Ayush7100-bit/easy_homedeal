@@ -172,3 +172,42 @@ if (property) {
     });
 
 }
+// Enquiry form
+
+const enquiryForm =
+    document.getElementById("enquiryForm");
+
+const enquirySuccess =
+    document.getElementById("enquirySuccess");
+
+
+if (enquiryForm) {
+
+    enquiryForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+
+        const name =
+            document.getElementById("name").value.trim();
+
+
+        const propertyTitle =
+            document.getElementById("propertyTitle").textContent;
+
+
+        enquirySuccess.textContent =
+            "Thank you, " + name +
+            "! Your enquiry for " +
+            propertyTitle +
+            " has been submitted successfully.";
+
+
+        enquirySuccess.style.display = "block";
+
+
+        enquiryForm.reset();
+
+    });
+
+}

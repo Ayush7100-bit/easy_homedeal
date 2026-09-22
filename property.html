@@ -195,17 +195,101 @@
 
                 <!-- Contact Buttons -->
 
-                <div class="property-actions">
+                <!-- Enquiry Section -->
 
-                    <button class="contact-btn">
-                        Contact Owner
-                    </button>
+<div class="enquiry-section">
 
-                    <button class="whatsapp-btn">
-                        WhatsApp
-                    </button>
+    <h2>
+        Interested in this property?
+    </h2>
 
-                </div>
+    <p>
+        Send an enquiry and we'll help you connect with the property owner.
+    </p>
+
+
+    <form id="enquiryForm">
+
+        <div class="form-group">
+
+            <label for="name">
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="email">
+                Email Address
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="phone">
+                Phone Number
+            </label>
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter your phone number"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="message">
+                Message
+            </label>
+
+            <textarea
+                id="message"
+                rows="4"
+                placeholder="I am interested in this property..."
+                required
+            ></textarea>
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="submit-enquiry-btn"
+        >
+            Send Enquiry
+        </button>
+
+    </form>
+
+
+    <p
+        id="enquirySuccess"
+        class="enquiry-success"
+    ></p>
+
+</div>
 
 
             </div>
