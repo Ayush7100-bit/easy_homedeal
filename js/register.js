@@ -45,10 +45,33 @@ registerForm.addEventListener("submit", function (event) {
     }
 
 
-    // Success
+    // Create user object
+
+    const user = {
+
+        name: name,
+
+        email: email,
+
+        phone: phone,
+
+        password: password
+
+    };
+
+
+    // Save user in browser storage
+
+    localStorage.setItem(
+        "easyHomeUser",
+        JSON.stringify(user)
+    );
+
+
+    // Success message
 
     registerMessage.textContent =
-        "Account registration successful!";
+        "Account created successfully! You can now login.";
 
     registerMessage.style.display = "block";
 
@@ -57,8 +80,8 @@ registerForm.addEventListener("submit", function (event) {
     registerMessage.style.color = "#247a3d";
 
 
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Phone:", phone);
+    // Clear form
+
+    registerForm.reset();
 
 });
