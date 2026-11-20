@@ -1,576 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>EasyHome Deals | Find Your Perfect Home</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find considered rental homes across Gurgaon with EasyHome Deals.">
+  <title>EasyHome Deals — Find your space</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
-
-<body>
-
-
-    <!-- Navigation Bar -->
-
-    <header>
-
-        <nav class="navbar">
-
-            <div class="logo">
-                Easy<span>homedeal</span>
-            </div>
-
-
-            <ul class="nav-links">
-
-                <li>
-                    <a href="#">Home</a>
-                </li>
-
-                <li>
-                    <a href="#properties">Properties</a>
-                </li>
-
-                <li>
-                    <a href="#locations">Locations</a>
-                </li>
-
-                <li>
-                    <a href="#about">About Us</a>
-                </li>
-
-            </ul>
-
-
-            <button class="login-btn">
-                Login
-            </button>
-
-        </nav>
-
-    </header>
-
-
-
-    <!-- Hero Section -->
-
-    <main>
-
-        <section class="hero">
-
-            <div class="hero-content">
-
-                <p class="small-heading">
-                    YOUR HOME. YOUR CHOICE.
-                </p>
-
-
-                <h1>
-                    Find a place you'll
-                    <span>love to call home.</span>
-                </h1>
-
-
-                <p class="hero-text">
-                    Discover rooms, flats, PGs and rental properties
-                    across Gurgaon with EasyHome Deals.
-                </p>
-
-
-
-                <!-- Search Box -->
-
-                <div class="search-box">
-
-
-                    <div class="search-field">
-
-                        <label>
-                            Location
-                        </label>
-
-                        <input
-                            type="text"
-                            id="locationInput"
-                            placeholder="e.g. Sector 55, Gurgaon"
-                        >
-
-                    </div>
-
-
-
-                    <div class="search-field">
-
-                        <label>
-                            Property Type
-                        </label>
-
-
-                        <select id="propertyType">
-
-                            <option>
-                                Any Property
-                            </option>
-
-                            <option>
-                                Room
-                            </option>
-
-                            <option>
-                                1 BHK
-                            </option>
-
-                            <option>
-                                2 BHK
-                            </option>
-
-                            <option>
-                                3 BHK
-                            </option>
-
-                            <option>
-                                PG
-                            </option>
-
-                            <option>
-                                Flat
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-
-                    <div class="search-field">
-
-                        <label>
-                            Budget
-                        </label>
-
-
-                        <select id="budget">
-
-                            <option>
-                                Any Budget
-                            </option>
-
-                            <option>
-                                Under ₹10,000
-                            </option>
-
-                            <option>
-                                ₹10,000 - ₹15,000
-                            </option>
-
-                            <option>
-                                ₹15,000 - ₹20,000
-                            </option>
-
-                            <option>
-                                Above ₹20,000
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-
-                    <button
-                        class="search-btn"
-                        id="searchBtn"
-                    >
-                        Search
-                    </button>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- Featured Properties -->
-
-        <section
-            class="properties"
-            id="properties"
-        >
-
-
-            <div class="section-heading">
-
-                <div>
-
-                    <p class="section-label">
-                        EXPLORE
-                    </p>
-
-                    <h2>
-                        Featured Properties
-                    </h2>
-
-                </div>
-
-
-                <a href="#">
-                    View All →
-                </a>
-
-            </div>
-
-
-
-            <div class="property-grid">
-
-
-                <!-- Property 1 -->
-
-                <article class="property-card">
-
-
-                    <div class="property-image">
-
-                        <div class="property-badge">
-                            Featured
-                        </div>
-
-
-                        <img
-                            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
-                            alt="Modern 1 BHK Apartment"
-                        >
-
-                    </div>
-
-
-
-                    <div class="property-info">
-
-                        <p class="property-type">
-                            Fully Furnished • 1 BHK
-                        </p>
-
-
-                        <h3>
-                            Modern 1 BHK Apartment
-                        </h3>
-
-
-                        <p class="property-location">
-                            📍 Sector 55, Gurgaon
-                        </p>
-
-
-                        <div class="property-bottom">
-
-                            <strong>
-                                ₹18,000<span>/month</span>
-                            </strong>
-
-
-      <a href="property.html?id=1" class="view-btn">
-    View
-</a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- Property 2 -->
-
-                <article class="property-card">
-
-
-                    <div class="property-image">
-
-                        <div class="property-badge">
-                            New
-                        </div>
-
-
-                        <img
-                            src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80"
-                            alt="Premium Private Room"
-                        >
-
-                    </div>
-
-
-
-                    <div class="property-info">
-
-                        <p class="property-type">
-                            Fully Furnished • Room
-                        </p>
-
-
-                        <h3>
-                            Premium Private Room
-                        </h3>
-
-
-                        <p class="property-location">
-                            📍 Sector 56, Gurgaon
-                        </p>
-
-
-                        <div class="property-bottom">
-
-                            <strong>
-                                ₹14,000<span>/month</span>
-                            </strong>
-
-
-                            <a href="property.html?id=2" class="view-btn">
-    View
-</a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- Property 3 -->
-
-                <article class="property-card">
-
-
-                    <div class="property-image">
-
-                        <div class="property-badge">
-                            Popular
-                        </div>
-
-
-                        <img
-                            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
-                            alt="Spacious 2 BHK Flat"
-                        >
-
-                    </div>
-
-
-
-                    <div class="property-info">
-
-                        <p class="property-type">
-                            Semi Furnished • 2 BHK
-                        </p>
-
-
-                        <h3>
-                            Spacious 2 BHK Flat
-                        </h3>
-
-
-                        <p class="property-location">
-                            📍 Golf Course Road, Gurgaon
-                        </p>
-
-
-                        <div class="property-bottom">
-
-                            <strong>
-                                ₹25,000<span>/month</span>
-                            </strong>
-
-
-                            <a href="property.html?id=3" class="view-btn">
-    View
-</a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- Locations -->
-
-        <section
-            class="locations"
-            id="locations"
-        >
-
-
-            <div class="section-heading">
-
-                <div>
-
-                    <p class="section-label">
-                        DISCOVER
-                    </p>
-
-                    <h2>
-                        Explore Gurgaon
-                    </h2>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="location-grid">
-
-
-                <div class="location-card">
-
-                    <h3>
-                        Sector 55
-                    </h3>
-
-                    <p>
-                        Find rental properties
-                    </p>
-
-                </div>
-
-
-
-                <div class="location-card">
-
-                    <h3>
-                        Sector 56
-                    </h3>
-
-                    <p>
-                        Find rental properties
-                    </p>
-
-                </div>
-
-
-
-                <div class="location-card">
-
-                    <h3>
-                        Golf Course Road
-                    </h3>
-
-                    <p>
-                        Find rental properties
-                    </p>
-
-                </div>
-
-
-
-                <div class="location-card">
-
-                    <h3>
-                        DLF Phase 1
-                    </h3>
-
-                    <p>
-                        Find rental properties
-                    </p>
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- About -->
-
-        <section
-            class="about"
-            id="about"
-        >
-
-            <div class="about-content">
-
-                <p class="section-label">
-                    WHY EASYHOME DEALS?
-                </p>
-
-
-                <h2>
-                    Finding your next home
-                    should be simple.
-                </h2>
-
-
-                <p>
-                    EasyHome Deals brings rental properties together
-                    in one convenient platform. Search by location,
-                    budget and property type to find a place that
-                    matches your requirements.
-                </p>
-
-            </div>
-
-        </section>
-
-
-    </main>
-
-
-
-    <!-- Footer -->
-
-    <footer>
-
-        <div class="footer-content">
-
-
-            <div>
-
-                <h2>
-                    EasyHome <span>Deals</span>
-                </h2>
-
-                <p>
-                    Making rental discovery easier in Gurgaon.
-                </p>
-
-            </div>
-
-
-            <div>
-
-                <p>
-                    © 2026 EasyHome Deals
-                </p>
-
-            </div>
-
-
+<body class="home-page">
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="EasyHome Deals home">easyhome<span class="brand-mark">.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><i class="bi bi-list"></i></button>
+      <div class="nav-links" id="navLinks">
+        <a class="active" href="index.html">Home</a><a href="explore.html">Explore Homes</a><a href="locations.html">Locations</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+        <a href="wishlist.html" class="wishlist-link"><i class="bi bi-heart"></i><span data-wishlist-count>0</span></a>
+      </div>
+      <div class="auth-nav" data-auth></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="small-heading"><span class="eyebrow-line"></span> FIND YOUR SPACE IN GURGAON</p>
+        <h1 aria-label="Space to live. Room to grow."><span class="hero-title-main" aria-hidden="true">Space to live.</span><span class="hero-title-script" aria-hidden="true">Room to grow.</span></h1>
+        <p class="hero-text">A better kind of rental search starts with a place that feels like yours.</p>
+        <a class="hero-cta" href="#homeSearch">Explore the collection <i class="bi bi-arrow-down-right"></i></a>
+      </div>
+      <div class="hero-annotation" aria-label="Gurgaon, India, coordinates 28.4595 degrees north, 77.0266 degrees east">
+        <span class="annotation-index">FIELD NOTE&nbsp; / &nbsp;01</span>
+        <span class="annotation-place"><i aria-hidden="true"></i>GURGAON, INDIA</span>
+        <span class="annotation-coordinates">28° 27′ 34″ N<br>77° 01′ 36″ E</span>
+      </div>
+      <div class="hero-caption"><span>AN ADDRESS, IN ITS OWN LIGHT</span><span>Gurgaon · Haryana · India</span></div>
+      <a class="scroll-cue" href="#homeSearch" aria-label="Scroll to home search"><span></span>SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="search-dock" id="homeSearch" aria-label="Find a home">
+      <div class="search-intro"><span class="eyebrow">A GOOD PLACE TO BEGIN</span><h2>Find your next address.</h2></div>
+      <div class="search-box">
+        <div class="search-field"><label for="locationInput">NEIGHBOURHOOD</label><div class="input-with-icon"><i class="bi bi-geo-alt"></i><input id="locationInput" type="search" placeholder="Where in Gurgaon?" autocomplete="off"></div></div>
+        <div class="search-field"><label for="propertyType">HOME TYPE</label><select id="propertyType"><option value="Any">Any property</option><option>Room</option><option>PG</option><option>1 BHK</option><option>2 BHK</option><option>3 BHK</option><option>Flat</option><option>Apartment</option></select></div>
+        <div class="search-field"><label for="bedrooms">BEDROOMS</label><select id="bedrooms"><option value="">Any bedrooms</option><option value="1">1 bedroom</option><option value="2">2 bedrooms</option><option value="3">3+ bedrooms</option></select></div>
+        <div class="search-field"><label for="budget">MONTHLY BUDGET</label><select id="budget"><option value="any">Any budget</option><option value="10000">Up to ₹10,000</option><option value="15000">Up to ₹15,000</option><option value="20000">Up to ₹20,000</option><option value="30000">Up to ₹30,000</option></select></div>
+        <button class="search-btn" id="searchBtn" type="button"><span>Find a home</span><i class="bi bi-arrow-up-right"></i></button>
+      </div>
+      <button class="search-reset" id="resetSearch" type="button">Reset search</button>
+    </section>
+
+    <section class="properties section-wrap" id="properties">
+      <div class="editorial-heading">
+        <div><p class="eyebrow">THE SHORTLIST</p><h2>Find a place<br>that feels like <em>yours.</em></h2></div>
+        <div class="heading-aside"><p>Good spaces. Great locations. Better living.</p><a class="text-link" href="explore.html">Explore all homes <i class="bi bi-arrow-up-right"></i></a></div>
+      </div>
+      <div class="property-grid" id="featuredGrid"></div>
+    </section>
+
+    <section class="neighbourhood-section" id="locations">
+      <div class="section-wrap">
+        <div class="editorial-heading editorial-heading-light">
+          <div><p class="eyebrow">ROOM TO ROAM</p><h2>Gurgaon, by<br><em>neighbourhood.</em></h2></div>
+          <div class="heading-aside"><p>Find your pace, your corner, your kind of city.</p><a class="text-link" href="locations.html">All neighbourhoods <i class="bi bi-arrow-up-right"></i></a></div>
         </div>
+        <div class="location-grid">
+          <a class="location-card" href="explore.html?location=Sector%2055"><span class="location-index">01</span><span class="location-title">Sector 55</span><span class="location-arrow"><i class="bi bi-arrow-up-right"></i></span></a>
+          <a class="location-card" href="explore.html?location=Golf%20Course%20Road"><span class="location-index">02</span><span class="location-title">Golf Course Road</span><span class="location-arrow"><i class="bi bi-arrow-up-right"></i></span></a>
+          <a class="location-card" href="explore.html?location=Cyber%20City"><span class="location-index">03</span><span class="location-title">Cyber City</span><span class="location-arrow"><i class="bi bi-arrow-up-right"></i></span></a>
+          <a class="location-card" href="explore.html?location=Sohna%20Road"><span class="location-index">04</span><span class="location-title">Sohna Road</span><span class="location-arrow"><i class="bi bi-arrow-up-right"></i></span></a>
+        </div>
+      </div>
+    </section>
 
-    </footer>
+    <section class="brand-story">
+      <div class="story-image"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85" alt="Sunlit contemporary living space" loading="lazy"><span class="image-note">A LITTLE MORE SPACE TO BE YOURSELF.</span></div>
+      <div class="story-copy"><p class="eyebrow">LESS SCROLLING. MORE SETTLING IN.</p><h2>Home is more<br>than an <em>address.</em></h2><p>We bring the details that matter into one considered place, so finding your next home feels less like work and more like possibility.</p><a class="story-link" href="about.html">A little about us <i class="bi bi-arrow-up-right"></i></a><span class="story-index">EASYHOME / 2026</span></div>
+    </section>
 
+    <section class="living-note section-wrap">
+      <p class="eyebrow">THE GOOD THINGS, MADE SIMPLE</p>
+      <div class="living-grid">
+        <article><span>01</span><i class="bi bi-compass"></i><h3>Know your corner</h3><p>Explore neighbourhoods and homes with location details up front.</p></article>
+        <article><span>02</span><i class="bi bi-sliders"></i><h3>Make it yours</h3><p>Compare rent, type and the details that shape everyday life.</p></article>
+        <article><span>03</span><i class="bi bi-bookmark-heart"></i><h3>Keep the good ones</h3><p>Save places you love and come back when you’re ready.</p></article>
+      </div>
+    </section>
 
-<script src="js/script.js"></script>
+    <section class="testimonials section-wrap">
+      <div class="editorial-heading"><div><p class="eyebrow">A FEW KIND WORDS</p><h2>Moving stories,<br><em>in the making.</em></h2></div><p class="heading-aside">Sample stories from the EasyHome community.</p></div>
+      <div class="testimonial-grid">
+        <article><div class="quote-mark">“</div><div class="stars">★★★★★</div><p>"The location and budget filters made it easy to shortlist a flat in minutes."</p><div class="person"><span>AK</span><div><strong>Ananya Kapoor</strong><small>Working professional</small></div></div></article>
+        <article><div class="quote-mark">“</div><div class="stars">★★★★★</div><p>"Clear property information helped me compare rooms before visiting."</p><div class="person"><span>RM</span><div><strong>Rahul Mehta</strong><small>Software engineer</small></div></div></article>
+        <article><div class="quote-mark">“</div><div class="stars">★★★★★</div><p>"The wishlist is handy for saving options while planning my move."</p><div class="person"><span>PS</span><div><strong>Priya Singh</strong><small>New resident</small></div></div></article>
+      </div>
+    </section>
 
+    <section class="cta-banner"><div><p class="eyebrow">YOUR NEXT CHAPTER</p><h2>There’s room for you here.</h2></div><a class="primary-btn" href="explore.html">Find your place <i class="bi bi-arrow-up-right"></i></a></section>
+  </main>
+  <footer class="site-footer"><div class="footer-content"><a class="logo" href="index.html">easyhome<span class="brand-mark">.</span></a><p>Thoughtful rental discovery in Gurgaon.</p><div class="footer-links"><a href="explore.html">Homes</a><a href="locations.html">Locations</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><span>© 2026 EASYHOME DEALS</span></div></footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    const grid=document.getElementById("featuredGrid");
+    grid.innerHTML=EH.properties().filter(p=>["Featured","Popular","New","Premium"].includes(p.badge)).slice(0,6).map(EH.card).join("");
+    EH.initWishlistButtons(grid);
+    document.getElementById("searchBtn").addEventListener("click",()=>{
+      const searchButton=document.getElementById("searchBtn");
+      const params=new URLSearchParams({location:document.getElementById("locationInput").value.trim(),type:document.getElementById("propertyType").value,budget:document.getElementById("budget").value,bedrooms:document.getElementById("bedrooms").value});
+      searchButton.classList.add("is-loading");
+      searchButton.setAttribute("aria-busy","true");
+      window.setTimeout(()=>window.location.href="explore.html?"+params.toString(),140);
+    });
+    document.getElementById("resetSearch").addEventListener("click",()=>{
+      document.getElementById("locationInput").value="";
+      document.getElementById("propertyType").value="Any";
+      document.getElementById("bedrooms").value="";
+      document.getElementById("budget").value="any";
+    });
+    document.getElementById("backToTop").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+  </script>
 </body>
 </html>
